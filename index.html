@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Converter -->
+  <div class="converter">
+    <div class="rate">Loading rates...</div>
+
+    <label for="fromAmount">Amount</label>
+    <div class="input-group">
+      <input type="number" id="fromAmount" value="1000" min="1">
+      <select id="fromCurrency"></select>
+    </div>
+
+    <button class="swap-btn" onclick="swapCurrencies()" title="Swap currencies">⇅</button>
+
+    <label for="toAmount">Converted to</label>
+    <div class="input-group">
+      <input type="text" id="toAmount" readonly>
+      <select id="toCurrency"></select>
+    </div>
+  </div>
+
+  <!-- Rates -->
+  <div class="table-container">
+    <h2>💱 Currency Rates</h2>
+    <input type="text" id="filterInput" placeholder="🔍 Filter by currency or rate...">
+    <table id="ratesTable">
+      <thead>
+        <tr>
+          <th>Currency</th>
+          <th>Online Sell Rate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td colspan="2">Loading...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

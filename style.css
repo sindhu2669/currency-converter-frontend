@@ -1,0 +1,132 @@
+/* Layout */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #0a5c0a, #093a09);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+  color: #fff;
+}
+
+/* Converter Box */
+.converter {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  width: 420px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.rate {
+  font-weight: 600;
+  color: #026a02;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.input-group {
+  display: flex;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f9f9f9;
+}
+
+.input-group input,
+.input-group select {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+.input-group select {
+  max-width: 160px;
+  border-left: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* Swap Button */
+.swap-btn {
+  background: #026a02;
+  color: #fff;
+  border-radius: 50%;
+  border: none;
+  padding: 12px 15px;
+  margin: 20px auto;
+  display: block;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.swap-btn:hover {
+  background: #048b04;
+  transform: rotate(180deg);
+}
+
+/* Rates Table */
+.table-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 750px;
+  color: #333;
+}
+
+.table-container h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #026a02;
+}
+
+#filterInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: #f0f8f0;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+}
+
+tr:hover {
+  background: #f9fff9;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .converter, .table-container {
+    width: 100%;
+    padding: 15px;
+  }
+}
